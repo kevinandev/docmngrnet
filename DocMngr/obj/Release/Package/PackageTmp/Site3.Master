@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site3.Master.cs" Inherits="quanly.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/homepage.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    PHẦN MỀM QUẢN LÝ TÀI LIỆU LƯU TRỮ
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Đăng nhập</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Xin chào <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+               
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer" >
+       <table><tr><td>Bản quyền thuộc Công ty cổ phần đầu tư Đức Nghiệp.</td></tr>
+       <tr><td>Địa chỉ : Số 89, Thôn Nhang - Xuân Đỉnh - Từ Liêm - Hà Nội </td></tr>
+        <tr><td>Điện thoại : 04.3 750 2450 - Fax : 04.3 750 2450 </td></tr>
+  <tr><td>Website : ducnghiep.com </td></tr>
+   </table>
+    </div>
+    </form>
+</body>
+</html>

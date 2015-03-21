@@ -1,0 +1,5 @@
+D:\QuangGui\Web_WS\DocMngr\QTSecurity\bin\Debug\QTSecurity.dll
+D:\QuangGui\Web_WS\DocMngr\QTSecurity\bin\Debug\QTSecurity.pdb
+D:\QuangGui\Web_WS\DocMngr\QTSecurity\obj\Debug\ResolveAssemblyReference.cache
+D:\QuangGui\Web_WS\DocMngr\QTSecurity\obj\Debug\QTSecurity.dll
+D:\QuangGui\Web_WS\DocMngr\QTSecurity\obj\Debug\QTSecurity.pdb

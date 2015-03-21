@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DocMngrDB" Class="DocMngrDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=MUT-VAIO\SQLExpress;Initial Catalog=DocMngrDB;Persist Security Info=True;User ID=quangnd6" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="appDB" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.function_role" Member="function_roles">
+    <Type Name="function_role">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="function_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="role_id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.functions" Member="functions">
+    <Type Name="function">
+      <Column Name="function_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="function_code" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="function_name" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="function_description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="function_path" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Membership" Member="aspnet_Memberships">
+    <Type Name="aspnet_Membership">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordFormat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordSalt" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePIN" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="LoweredEmail" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordQuestion" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordAnswer" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsLockedOut" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLoginDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastPasswordChangedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLockoutDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="aspnet_User_aspnet_Membership" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Users" Member="aspnet_Users">
+    <Type Name="aspnet_User">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredUserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="MobileAlias" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_User_aspnet_Membership" Member="aspnet_Membership" ThisKey="UserId" OtherKey="UserId" Type="aspnet_Membership" Cardinality="One" />
+      <Association Name="aspnet_User_aspnet_UsersInRole" Member="aspnet_UsersInRoles" ThisKey="UserId" OtherKey="UserId" Type="aspnet_UsersInRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_UsersInRoles" Member="aspnet_UsersInRoles">
+    <Type Name="aspnet_UsersInRole">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="aspnet_User_aspnet_UsersInRole" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+      <Association Name="aspnet_Role_aspnet_UsersInRole" Member="aspnet_Role" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_Role" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.introduce" Member="introduces">
+    <Type Name="introduce">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="body" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="last_modify" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="comment" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_HopHoSo" Member="Su_HopHoSos">
+    <Type Name="Su_HopHoSo">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_HoSo" Member="Su_HoSos">
+    <Type Name="Su_HoSo">
+      <Column Name="Coquan" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MaPhong" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="MucLucSo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="HopSo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="HoSoSo" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NgonNgu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="KyHieu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TieuDe" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ThoiGianBatDau" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ThoiGianKetThuc" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ButTich" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CheDoSuDung" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ThoiHanBaoQuan" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TinhTrangVatLy" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_MucLuc" Member="Su_MucLucs">
+    <Type Name="Su_MucLuc">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Layer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_PhongLuuTru" Member="Su_PhongLuuTrus">
+    <Type Name="Su_PhongLuuTru">
+      <Column Name="Coquan" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MaPhong" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TenPhong" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="LichSu" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ThoigianTaiLieu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TongSoTaiLieu" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TaiLieuChinhLy" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TaiLieuChuaChinhLy" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CacNhomTaiLieu" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NhomTaiLieuKhac" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ThoiGianNhap" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NgonNgu" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CongCu" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="BanSaoBaoHiem" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_Attachment_Version" Member="Su_Attachment_Versions">
+    <Type Name="Su_Attachment_Version">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="attachment_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="version" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_HoSo_Attachment" Member="Su_HoSo_Attachments">
+    <Type Name="Su_HoSo_Attachment">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_hoso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="attachment_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_VanBan_Attachment" Member="Su_VanBan_Attachments">
+    <Type Name="Su_VanBan_Attachment">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vanban_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="attachment_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_Attachment" Member="Su_Attachments">
+    <Type Name="Su_Attachment">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="path" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="version" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mime_type" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_LoaiTaiLieu" Member="Su_LoaiTaiLieus">
+    <Type Name="Su_LoaiTaiLieu">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_LinhVuc" Member="Su_LinhVucs">
+    <Type Name="Su_LinhVuc">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Roles" Member="aspnet_Roles">
+    <Type Name="aspnet_Role">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredRoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="aspnet_Role_aspnet_UsersInRole" Member="aspnet_UsersInRoles" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_UsersInRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.menu" Member="menus">
+    <Type Name="menu">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="text" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="url" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="selectable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="master_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[order]" Member="order" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="secure_level" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="syn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.menu_role" Member="menu_roles">
+    <Type Name="menu_role">
+      <Column Name="menu_role_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="menu_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="role_id" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="comment" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="menu_code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="role_code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_DoMat" Member="Su_DoMats">
+    <Type Name="Su_DoMat">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Layer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_NgonNgu" Member="Su_NgonNgus">
+    <Type Name="Su_NgonNgu">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_QuanLyCheDoSuDung" Member="Su_QuanLyCheDoSuDungs">
+    <Type Name="Su_QuanLyCheDoSuDung">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_ThoiHanBaoQuan" Member="Su_ThoiHanBaoQuans">
+    <Type Name="Su_ThoiHanBaoQuan">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_CoQuanLuuTru" Member="Su_CoQuanLuuTrus">
+    <Type Name="Su_CoQuanLuuTru">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_MucDoTinCay" Member="Su_MucDoTinCays">
+    <Type Name="Su_MucDoTinCay">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_LoaiVanban" Member="Su_LoaiVanbans">
+    <Type Name="Su_LoaiVanban">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_TinhTrangVatLy" Member="Su_TinhTrangVatLies">
+    <Type Name="Su_TinhTrangVatLy">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.unit" Member="units">
+    <Type Name="unit">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="master_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.user_extend" Member="user_extends">
+    <Type Name="user_extend">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="tel" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="fax" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="regency" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="full_name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="unit_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.user_permission" Member="user_permissions">
+    <Type Name="user_permission">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="menu_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="permission_read" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="permission_edit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="permission_create" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="permission_delete" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="permission_download" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Su_VanbanTrongHoSo" Member="Su_VanbanTrongHoSos">
+    <Type Name="Su_VanbanTrongHoSo">
+      <Column Name="HoSoSo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CoQuan" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="MaPhong" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="MucLucSo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="KyHieuVanBan" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SoLuongTo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ThoiGian" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="KiHieuThongTin" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NgonNgu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ToSo" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TrichYeu" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TacGia" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="LoaiVanBan" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DoMat" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ButTich" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="MucDoTinCay" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="FilePath" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TinhTrangVatLy" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Hoso_ID" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ThoiGianNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

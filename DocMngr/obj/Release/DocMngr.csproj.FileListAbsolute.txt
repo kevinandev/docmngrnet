@@ -1,0 +1,11 @@
+D:\QuangGui\Web_WS\DocMngr\DocMngr\bin\DocMngr.dll
+D:\QuangGui\Web_WS\DocMngr\DocMngr\bin\DocMngr.pdb
+D:\QuangGui\Web_WS\DocMngr\DocMngr\bin\DTPicker.dll
+D:\QuangGui\Web_WS\DocMngr\DocMngr\bin\eWorld.UI.dll
+D:\QuangGui\Web_WS\DocMngr\DocMngr\bin\FredCK.FCKeditorV2.dll
+D:\QuangGui\Web_WS\DocMngr\DocMngr\bin\log4net.dll
+D:\QuangGui\Web_WS\DocMngr\DocMngr\bin\QTSecurity.dll
+D:\QuangGui\Web_WS\DocMngr\DocMngr\bin\QTSecurity.pdb
+D:\QuangGui\Web_WS\DocMngr\DocMngr\obj\Release\ResolveAssemblyReference.cache
+D:\QuangGui\Web_WS\DocMngr\DocMngr\obj\Release\DocMngr.dll
+D:\QuangGui\Web_WS\DocMngr\DocMngr\obj\Release\DocMngr.pdb

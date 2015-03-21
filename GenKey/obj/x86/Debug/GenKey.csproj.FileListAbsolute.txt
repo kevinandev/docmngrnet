@@ -1,0 +1,5 @@
+D:\QuangGui\Web_WS\DocMngr\GenKey\bin\Debug\GenKey.exe
+D:\QuangGui\Web_WS\DocMngr\GenKey\bin\Debug\GenKey.pdb
+D:\QuangGui\Web_WS\DocMngr\GenKey\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\QuangGui\Web_WS\DocMngr\GenKey\obj\x86\Debug\GenKey.exe
+D:\QuangGui\Web_WS\DocMngr\GenKey\obj\x86\Debug\GenKey.pdb

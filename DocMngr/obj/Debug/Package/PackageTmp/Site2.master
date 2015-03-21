@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="DocMngr.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <div class="loginDisplay">
+                    <div id="anonymous" runat="server">
+                        [<a href="~/Login.aspx" id="HeadLoginStatus" runat="server">Đăng nhập</a>]
+                    </div>
+                    <div id="logedIn" runat="server">
+                        Xin chào <span class="bold">
+                            <asp:Label ID="lblUserName" runat="server" />
+                        </span>! [
+                        <asp:LinkButton ID="btnSignout" runat="server" Text="Đăng xuất" OnClick="onSignOut" />
+                        ]</div>
+                </div>
+            </div>
+        </div>
+        <div class="clear hideSkiplink">
+        </div>
+        <div>
+            <asp:SiteMapPath ID="mainSiteMap" runat="server">
+            </asp:SiteMapPath>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    </form>
+</body>
+</html>

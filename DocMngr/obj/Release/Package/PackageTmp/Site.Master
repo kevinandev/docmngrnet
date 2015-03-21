@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="DocMngr.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/box.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title" runat="server">
+                <div class="loginDisplay">
+                    <div id="anonymous" runat="server">
+                        [<a href="~/Login.aspx" id="HeadLoginStatus" runat="server">Đăng nhập</a>]
+                    </div>
+                    <div id="logedIn" runat="server">
+                        Xin chào <span class="bold">
+                            <asp:Label ID="lblUserName" runat="server" />
+                        </span>! [
+                        <asp:LinkButton ID="btnSignout" runat="server" Text="Đăng xuất" OnClick="onSignOut" />
+                        ]</div>
+                </div>
+            </div>
+        </div>
+        <div class="clear hideSkiplink">
+            <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                IncludeStyleBlock="false" Orientation="Horizontal">
+            </asp:Menu>
+        </div>
+        <div>
+            <asp:SiteMapPath ID="mainSiteMap" runat="server">
+            </asp:SiteMapPath>
+        </div>
+        <div id="divMessage" runat="server">
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer" align="center">
+        Bản quyền thuộc Công ty cổ phần đầu tư Đức Nghiệp.<br />
+       Địa chỉ : Số 89, Thôn Nhang - Xuân Đỉnh - Từ Liêm - Hà Nội 
+        <br />
+        Điện thoại : 04.3 750 2450 - Fax : 04.3 750 2450 
+        <br />
+        Website : <a href="http://ducnghiep.com/" style="color: white;">ducnghiep.com </a>
+    </div>
+    </form>
+</body>
+</html>

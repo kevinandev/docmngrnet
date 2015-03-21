@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D2C46FC-8FFC-493E-B7A9-3AE77D71E735}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FunctionGroup</RootNamespace>
+    <AssemblyName>DocMngr</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DTPicker">
+      <HintPath>..\..\dll\DTPicker.dll</HintPath>
+    </Reference>
+    <Reference Include="eWorld.UI">
+      <HintPath>..\..\dll\eWorld.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2">
+      <HintPath>..\..\dll\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Bean\ReportHoSoBean.xml" />
+    <Content Include="files\About.aspx" />
+    <Content Include="FunctionGroup\AdminPage.aspx" />
+    <Content Include="AccessDenied.aspx" />
+    <Content Include="CreateRole.aspx" />
+    <Content Include="CreateUser.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\DocMngrDB.mdf" />
+    <Content Include="App_Data\DocMngrDB_log.ldf">
+      <DependentUpon>DocMngrDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\ui-lightness\jquery-ui-1.8.19.custom.css" />
+    <Content Include="FunctionManage.aspx" />
+    <Content Include="Function\ChiTietVBTrongHoSo.aspx" />
+    <Content Include="Function\PermitUser.aspx" />
+    <Content Include="Function\QLFileDinhKem.aspx" />
+    <Content Include="Function\QLMenu.aspx" />
+    <Content Include="Function\QLMenuRole.aspx" />
+    <Content Include="Function\QLPhanQuyen.aspx" />
+    <Content Include="Function\QLPhongBan.aspx" />
+    <Content Include="Function\QLPhongLuuTru.aspx" />
+    <Content Include="Function\QLRole.aspx" />
+    <Content Include="Function\QLUser.aspx" />
+    <Content Include="Function\QLVanBanHoSo.aspx" />
+    <Content Include="Function\ThemMoiUser.aspx" />
+    <Content Include="Function\ThemVBTrongHoSo.aspx" />
+    <Content Include="Function\ThongKeTaiLieu.aspx" />
+    <Content Include="Function\ViewHoSo.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="imgs\background4.jpg" />
+    <Content Include="imgs\changepass.jpg" />
+    <Content Include="imgs\gnome_window_manager.png" />
+    <Content Include="imgs\kmenuedit.png" />
+    <Content Include="imgs\panel_window_menu.png" />
+    <Content Include="imgs\permit.jpg" />
+    <Content Include="imgs\permit2.gif" />
+    <Content Include="imgs\q_Banner.png" />
+    <Content Include="imgs\q_login_bgr.png" />
+    <Content Include="imgs\Remove-icon.png" />
+    <Content Include="imgs\user.png" />
+    <Content Include="imgs\user_group.png" />
+    <Content Include="imgs\view_tree.png" />
+    <Content Include="introduce.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="Picklist\LoaiVanBan.aspx" />
+    <Content Include="Picklist\QLCheDoSuDung.aspx" />
+    <Content Include="Picklist\QLCoQuanLuuTru.aspx" />
+    <Content Include="Function\QLHopHoSo.aspx" />
+    <Content Include="Function\QLHoSo.aspx" />
+    <Content Include="Picklist\QLLinhVuc.aspx" />
+    <Content Include="Picklist\QLLoaiTaiLieu.aspx" />
+    <Content Include="Picklist\QLMucDoTinCay.aspx" />
+    <Content Include="Function\QLMucLuc.aspx" />
+    <Content Include="Picklist\QLNgonNgu.aspx" />
+    <Content Include="Picklist\QLThoiHanBaoQuan.aspx" />
+    <Content Include="Picklist\QLTinhTrangVatLy.aspx" />
+    <Content Include="Picklist\QuanLyDoMat.aspx" />
+    <Content Include="Function\ThemMoiHoSo.aspx" />
+    <Content Include="Function\ThemMoiPhongLuuTru.aspx" />
+    <Content Include="Function\ThongKeHoSoNew.aspx" />
+    <Content Include="Function\TimKiemCacHoSo.aspx" />
+    <Content Include="Function\TimKiemCacVanBan.aspx" />
+    <Content Include="Function\TimKiemHoSo.aspx" />
+    <Content Include="Function\TimKiemVanBan.aspx" />
+    <Content Include="Scripts\calendar-en.min.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.19.custom.min.js" />
+    <Content Include="Scripts\jquery.dynDateTime.min.js" />
+    <Content Include="Site.Master" />
+    <Content Include="Styles\add.png" />
+    <Content Include="Styles\book_blue_add.png" />
+    <Content Include="Styles\box.css" />
+    <Content Include="Styles\calendar-blue.css" />
+    <Content Include="Styles\calender.png" />
+    <Content Include="Styles\document_add.png" />
+    <Content Include="Styles\document_delete.png" />
+    <Content Include="Styles\dot.png" />
+    <Content Include="Styles\edit.gif" />
+    <Content Include="Styles\forms.css" />
+    <Content Include="Styles\icon_view.gif" />
+    <Content Include="Styles\images\error.png" />
+    <Content Include="Styles\images\notice.png" />
+    <Content Include="Styles\images\success.png" />
+    <Content Include="Styles\images\warning.png" />
+    <Content Include="Styles\rad.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="TEST.aspx" />
+    <Content Include="TestMenu.aspx" />
+    <Content Include="ThongBaoLoi.aspx" />
+    <Content Include="UserControl\BannerUC.ascx" />
+    <Content Include="UserControl\MainMenuUC.ascx" />
+    <Content Include="UserManagement.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bean\PermitInfo.cs" />
+    <Compile Include="Bean\PermitUserInfo.cs" />
+    <Compile Include="Bean\ReportHoSoBean.cs" />
+    <Compile Include="Bean\UserInfo.cs" />
+    <Compile Include="FunctionGroup\AdminPage.aspx.cs">
+      <DependentUpon>AdminPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FunctionGroup\AdminPage.aspx.designer.cs">
+      <DependentUpon>AdminPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bean\FunctionBean.cs" />
+    <Compile Include="Bean\MenuBean.cs" />
+    <Compile Include="CreateRole.aspx.cs">
+      <DependentUpon>CreateRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateRole.aspx.designer.cs">
+      <DependentUpon>CreateRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.aspx.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateUser.aspx.designer.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\BaseDAO.cs" />
+    <Compile Include="Dao\DocMngrData.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocMngrData.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\MenuDAO.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionManage.aspx.cs">
+      <DependentUpon>FunctionManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FunctionManage.aspx.designer.cs">
+      <DependentUpon>FunctionManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\ChiTietVBTrongHoSo.aspx.cs">
+      <DependentUpon>ChiTietVBTrongHoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\ChiTietVBTrongHoSo.aspx.designer.cs">
+      <DependentUpon>ChiTietVBTrongHoSo.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\PermitUser.aspx.cs">
+      <DependentUpon>PermitUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\PermitUser.aspx.designer.cs">
+      <DependentUpon>PermitUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLFileDinhKem.aspx.cs">
+      <DependentUpon>QLFileDinhKem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLFileDinhKem.aspx.designer.cs">
+      <DependentUpon>QLFileDinhKem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLMenu.aspx.cs">
+      <DependentUpon>QLMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLMenu.aspx.designer.cs">
+      <DependentUpon>QLMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLMenuRole.aspx.cs">
+      <DependentUpon>QLMenuRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLMenuRole.aspx.designer.cs">
+      <DependentUpon>QLMenuRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLPhanQuyen.aspx.cs">
+      <DependentUpon>QLPhanQuyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLPhanQuyen.aspx.designer.cs">
+      <DependentUpon>QLPhanQuyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLPhongBan.aspx.cs">
+      <DependentUpon>QLPhongBan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLPhongBan.aspx.designer.cs">
+      <DependentUpon>QLPhongBan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLPhongLuuTru.aspx.cs">
+      <DependentUpon>QLPhongLuuTru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLPhongLuuTru.aspx.designer.cs">
+      <DependentUpon>QLPhongLuuTru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLRole.aspx.cs">
+      <DependentUpon>QLRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLRole.aspx.designer.cs">
+      <DependentUpon>QLRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLUser.aspx.cs">
+      <DependentUpon>QLUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLUser.aspx.designer.cs">
+      <DependentUpon>QLUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLVanBanHoSo.aspx.cs">
+      <DependentUpon>QLVanBanHoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLVanBanHoSo.aspx.designer.cs">
+      <DependentUpon>QLVanBanHoSo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\ThemMoiUser.aspx.cs">
+      <DependentUpon>ThemMoiUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\ThemMoiUser.aspx.designer.cs">
+      <DependentUpon>ThemMoiUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\ThemVBTrongHoSo.aspx.cs">
+      <DependentUpon>ThemVBTrongHoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\ThemVBTrongHoSo.aspx.designer.cs">
+      <DependentUpon>ThemVBTrongHoSo.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\ThongKeTaiLieu.aspx.cs">
+      <DependentUpon>ThongKeTaiLieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\ThongKeTaiLieu.aspx.designer.cs">
+      <DependentUpon>ThongKeTaiLieu.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\ViewHoSo.aspx.cs">
+      <DependentUpon>ViewHoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\ViewHoSo.aspx.designer.cs">
+      <DependentUpon>ViewHoSo.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="introduce.aspx.cs">
+      <DependentUpon>introduce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="introduce.aspx.designer.cs">
+      <DependentUpon>introduce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\AttachmentLogic.cs" />
+    <Compile Include="Logic\LinhVucLogic.cs" />
+    <Compile Include="Logic\LoaiTaiLieuLogic.cs" />
+    <Compile Include="Logic\MenuLogic.cs" />
+    <Compile Include="Logic\MenuRoleLogic.cs" />
+    <Compile Include="Logic\PermitLogic.cs" />
+    <Compile Include="Logic\PhongBanLogic.cs" />
+    <Compile Include="Logic\QLUserLogic.cs" />
+    <Compile Include="Logic\RoleLogic.cs" />
+    <Compile Include="Logic\ThemMoiUserLogic.cs" />
+    <Compile Include="Logic\VanBanHoSoLogic.cs" />
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Picklist\QLLinhVuc.aspx.cs">
+      <DependentUpon>QLLinhVuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Picklist\QLLinhVuc.aspx.designer.cs">
+      <DependentUpon>QLLinhVuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Picklist\QLLoaiTaiLieu.aspx.cs">
+      <DependentUpon>QLLoaiTaiLieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Picklist\QLLoaiTaiLieu.aspx.designer.cs">
+      <DependentUpon>QLLoaiTaiLieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportHoSo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHoSo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptMucLucHoSo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMucLucHoSo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Site3.Master.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site3.Master.designer.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TEST.aspx.cs">
+      <DependentUpon>TEST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TEST.aspx.designer.cs">
+      <DependentUpon>TEST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThongBaoLoi.aspx.cs">
+      <DependentUpon>ThongBaoLoi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThongBaoLoi.aspx.designer.cs">
+      <DependentUpon>ThongBaoLoi.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\DatabaseUtil.cs" />
+    <Compile Include="Logic\HoSoLogic.cs" />
+    <Compile Include="Picklist\LoaiVanBan.aspx.cs">
+      <DependentUpon>LoaiVanBan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Picklist\LoaiVanBan.aspx.designer.cs">
+      <DependentUpon>LoaiVanBan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\LoaiVanBanLogic.cs" />
+    <Compile Include="Logic\PhongLuuTruLogic.cs" />
+    <Compile Include="Picklist\QLCheDoSuDung.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>QLCheDoSuDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Picklist\QLCheDoSuDung.aspx.designer.cs">
+      <DependentUpon>QLCheDoSuDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Picklist\QLCoQuanLuuTru.aspx.cs">
+      <DependentUpon>QLCoQuanLuuTru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Picklist\QLCoQuanLuuTru.aspx.designer.cs">
+      <DependentUpon>QLCoQuanLuuTru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLHopHoSo.aspx.cs">
+      <DependentUpon>QLHopHoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLHopHoSo.aspx.designer.cs">
+      <DependentUpon>QLHopHoSo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLHoSo.aspx.cs">
+      <DependentUpon>QLHoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLHoSo.aspx.designer.cs">
+      <DependentUpon>QLHoSo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Picklist\QLMucDoTinCay.aspx.cs">
+      <DependentUpon>QLMucDoTinCay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Picklist\QLMucDoTinCay.aspx.designer.cs">
+      <DependentUpon>QLMucDoTinCay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\QLMucLuc.aspx.cs">
+      <DependentUpon>QLMucLuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\QLMucLuc.aspx.designer.cs">
+      <DependentUpon>QLMucLuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Picklist\QLNgonNgu.aspx.cs">
+      <DependentUpon>QLNgonNgu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Picklist\QLNgonNgu.aspx.designer.cs">
+      <DependentUpon>QLNgonNgu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Picklist\QLThoiHanBaoQuan.aspx.cs">
+      <DependentUpon>QLThoiHanBaoQuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Picklist\QLThoiHanBaoQuan.aspx.designer.cs">
+      <DependentUpon>QLThoiHanBaoQuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Picklist\QLTinhTrangVatLy.aspx.cs">
+      <DependentUpon>QLTinhTrangVatLy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Picklist\QLTinhTrangVatLy.aspx.designer.cs">
+      <DependentUpon>QLTinhTrangVatLy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\QuanLyCheDoSuDungLogic.cs" />
+    <Compile Include="Picklist\QuanLyDoMat.aspx.cs">
+      <DependentUpon>QuanLyDoMat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Picklist\QuanLyDoMat.aspx.designer.cs">
+      <DependentUpon>QuanLyDoMat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\Su_CoQuanLuuTruLogic.cs" />
+    <Compile Include="Logic\Su_DoMatLogic.cs" />
+    <Compile Include="Logic\Su_HopHoSoLogic.cs" />
+    <Compile Include="Logic\Su_MucDoTinCayLogic.cs" />
+    <Compile Include="Logic\Su_MucLucLogic.cs" />
+    <Compile Include="Logic\Su_NgonNguLogic.cs" />
+    <Compile Include="Logic\Su_ThoiHanBaoQuanLogic.cs" />
+    <Compile Include="Logic\Su_TinhTrangVatLyLogic.cs" />
+    <Compile Include="Function\ThemMoiHoSo.aspx.cs">
+      <DependentUpon>ThemMoiHoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\ThemMoiHoSo.aspx.designer.cs">
+      <DependentUpon>ThemMoiHoSo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\ThemMoiPhongLuuTru.aspx.cs">
+      <DependentUpon>ThemMoiPhongLuuTru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\ThemMoiPhongLuuTru.aspx.designer.cs">
+      <DependentUpon>ThemMoiPhongLuuTru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\ThongKeHoSoNew.aspx.cs">
+      <DependentUpon>ThongKeHoSoNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\ThongKeHoSoNew.aspx.designer.cs">
+      <DependentUpon>ThongKeHoSoNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\TimKiemCacHoSo.aspx.cs">
+      <DependentUpon>TimKiemCacHoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\TimKiemCacHoSo.aspx.designer.cs">
+      <DependentUpon>TimKiemCacHoSo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\TimKiemCacVanBan.aspx.cs">
+      <DependentUpon>TimKiemCacVanBan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\TimKiemCacVanBan.aspx.designer.cs">
+      <DependentUpon>TimKiemCacVanBan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function\TimKiemHoSo.aspx.cs">
+      <DependentUpon>TimKiemHoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\TimKiemHoSo.aspx.designer.cs">
+      <DependentUpon>TimKiemHoSo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\TimkiemLogic.cs" />
+    <Compile Include="Function\TimKiemVanBan.aspx.cs">
+      <DependentUpon>TimKiemVanBan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Function\TimKiemVanBan.aspx.designer.cs">
+      <DependentUpon>TimKiemVanBan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\VanBanTrongHoSoLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.master.cs">
+      <DependentUpon>Site2.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.master.designer.cs">
+      <DependentUpon>Site2.master</DependentUpon>
+    </Compile>
+    <Compile Include="TestMenu.aspx.cs">
+      <DependentUpon>TestMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestMenu.aspx.designer.cs">
+      <DependentUpon>TestMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\BannerUC.ascx.cs">
+      <DependentUpon>BannerUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\BannerUC.ascx.designer.cs">
+      <DependentUpon>BannerUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\MainMenuUC.ascx.cs">
+      <DependentUpon>MainMenuUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\MainMenuUC.ascx.designer.cs">
+      <DependentUpon>MainMenuUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Constants.cs" />
+    <Compile Include="Util\HtmlUtil.cs" />
+    <Compile Include="Util\Logger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QTSecurity\QTSecurity.csproj">
+      <Project>{9109BDE9-6AF5-4DD8-9517-3315F53C343C}</Project>
+      <Name>QTSecurity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dao\DocMngrData.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DocMngrData.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Site2.master" />
+    <None Include="files\CREATE TABLE2.docx" />
+    <None Include="files\Huongdan 10-03-2010.pdf" />
+    <Content Include="files\Site.Master" />
+    <Content Include="Site3.Master" />
+    <None Include="Styles\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dao\DocMngrData.dbml.layout">
+      <DependentUpon>DocMngrData.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\ReportHoSo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHoSo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptMucLucHoSo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMucLucHoSo.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50075</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

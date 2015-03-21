@@ -1,0 +1,596 @@
+2014-10-17 15:27:38,089 [11] INFO  File User load
+2014-10-17 15:34:28,726 [8] INFO  File User load
+2014-10-17 15:34:36,102 [13] INFO  File Search VB Query: SELECT h.*, lvb.Name as LoaiVanBanv, th.Name as MucDoTinCayv , hs.HopSo, cq.Name as TenCoQuan
+            FROM Su_VanbanTrongHoSo h 
+            left join Su_HoSo hs on hs.HoSoSo = h.HoSoSo
+            left join Su_CoQuanLuuTru cq on hs.Coquan = cq.Code
+            left join Su_LoaiVanban lvb on lvb.ID = h.LoaiVanBan 
+            left join Su_MucDoTinCay th on th.ID = h.MucDoTinCay  
+            WHERE 1=1 
+2014-10-17 15:37:22,561 [17] INFO  File User load
+2014-10-17 15:37:34,679 [17] INFO  File Search VB Query: SELECT h.*, lvb.Name as LoaiVanBanv, th.Name as MucDoTinCayv , hs.HopSo, cq.Name as TenCoQuan
+            FROM Su_VanbanTrongHoSo h 
+            left join Su_HoSo hs on hs.HoSoSo = h.HoSoSo
+            left join Su_CoQuanLuuTru cq on hs.Coquan = cq.Code
+            left join Su_LoaiVanban lvb on lvb.ID = h.LoaiVanBan 
+            left join Su_MucDoTinCay th on th.ID = h.MucDoTinCay  
+            WHERE 1=1 
+2014-10-17 15:47:50,153 [19] INFO  File User load
+2014-10-17 15:47:56,830 [11] INFO  File Search VB Query: SELECT h.*, lvb.Name as LoaiVanBanv, th.Name as MucDoTinCayv , hs.HopSo, cq.Name as TenCoQuan
+            FROM Su_VanbanTrongHoSo h 
+            left join Su_HoSo hs on hs.HoSoSo = h.HoSoSo
+            left join Su_CoQuanLuuTru cq on hs.Coquan = cq.Code
+            left join Su_LoaiVanban lvb on lvb.ID = h.LoaiVanBan 
+            left join Su_MucDoTinCay th on th.ID = h.MucDoTinCay  
+            WHERE 1=1 
+2014-10-17 16:03:38,532 [10] INFO  File User load
+2014-10-17 16:03:50,481 [16] INFO  File Search VB Query: SELECT h.*, lvb.Name as LoaiVanBanv, th.Name as MucDoTinCayv , hs.HopSo, cq.Name as TenCoQuan
+            FROM Su_VanbanTrongHoSo h 
+            left join Su_HoSo hs on hs.HoSoSo = h.HoSoSo
+            left join Su_CoQuanLuuTru cq on hs.Coquan = cq.Code
+            left join Su_LoaiVanban lvb on lvb.ID = h.LoaiVanBan 
+            left join Su_MucDoTinCay th on th.ID = h.MucDoTinCay  
+            WHERE 1=1 
+2014-10-17 16:04:44,954 [15] INFO  File Search VB Query: SELECT h.*, lvb.Name as LoaiVanBanv, th.Name as MucDoTinCayv , hs.HopSo, cq.Name as TenCoQuan
+            FROM Su_VanbanTrongHoSo h 
+            left join Su_HoSo hs on hs.HoSoSo = h.HoSoSo
+            left join Su_CoQuanLuuTru cq on hs.Coquan = cq.Code
+            left join Su_LoaiVanban lvb on lvb.ID = h.LoaiVanBan 
+            left join Su_MucDoTinCay th on th.ID = h.MucDoTinCay  
+            WHERE 1=1 
+2014-10-17 16:12:36,993 [23] INFO  File User load
+2014-10-17 16:12:50,550 [4] INFO  File Search VB Query: SELECT h.*, lvb.Name as LoaiVanBanv, th.Name as MucDoTinCayv , hs.HopSo, cq.Name as TenCoQuan
+            FROM Su_VanbanTrongHoSo h 
+            left join Su_HoSo hs on hs.HoSoSo = h.HoSoSo
+            left join Su_CoQuanLuuTru cq on hs.Coquan = cq.Code
+            left join Su_LoaiVanban lvb on lvb.ID = h.LoaiVanBan 
+            left join Su_MucDoTinCay th on th.ID = h.MucDoTinCay  
+            WHERE 1=1 
+2014-10-17 16:12:56,608 [8] INFO  File Search VB Query: SELECT h.*, lvb.Name as LoaiVanBanv, th.Name as MucDoTinCayv , hs.HopSo, cq.Name as TenCoQuan
+            FROM Su_VanbanTrongHoSo h 
+            left join Su_HoSo hs on hs.HoSoSo = h.HoSoSo
+            left join Su_CoQuanLuuTru cq on hs.Coquan = cq.Code
+            left join Su_LoaiVanban lvb on lvb.ID = h.LoaiVanBan 
+            left join Su_MucDoTinCay th on th.ID = h.MucDoTinCay  
+            WHERE 1=1  AND h.TrichYeu like '%Quang%' 
+2014-10-17 16:18:56,799 [16] INFO  File User load
+2014-10-17 16:19:03,332 [8] INFO  File Search VB Query: SELECT h.*, lvb.Name as LoaiVanBanv, th.Name as MucDoTinCayv , hs.HopSo, cq.Name as TenCoQuan
+            FROM Su_VanbanTrongHoSo h 
+            left join Su_HoSo hs on hs.HoSoSo = h.HoSoSo
+            left join Su_CoQuanLuuTru cq on hs.Coquan = cq.Code
+            left join Su_LoaiVanban lvb on lvb.ID = h.LoaiVanBan 
+            left join Su_MucDoTinCay th on th.ID = h.MucDoTinCay  
+            WHERE 1=1 
+2014-10-17 17:40:39,868 [20] INFO  File User load
+2014-10-17 17:49:02,914 [5] INFO  File User load
+2014-10-17 17:51:32,700 [23] INFO  File User load
+2014-10-17 18:06:37,446 [8] INFO  File User load
+2014-10-17 18:11:23,467 [17] INFO  File User load
+2014-10-17 18:15:10,890 [16] INFO  File User load
+2014-10-17 18:18:57,624 [13] INFO  File User load
+2014-10-17 18:25:08,580 [11] INFO  File User load
+2014-10-17 18:25:12,450 [11] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 18:26:58,670 [11] INFO  File User load
+2014-10-17 18:27:02,803 [5] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 18:29:46,017 [5] INFO  File User load
+2014-10-17 18:29:49,892 [13] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 18:31:15,315 [5] INFO  File User load
+2014-10-17 18:31:19,792 [13] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 18:32:30,804 [5] INFO  File User load
+2014-10-17 18:32:34,844 [5] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 18:32:42,518 [11] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 4 AND 6
+2014-10-17 18:32:57,668 [5] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 7 AND 9
+2014-10-17 18:57:05,271 [5] INFO  File User load
+2014-10-17 18:57:08,968 [14] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 19:10:46,553 [16] INFO  File User load
+2014-10-17 19:10:50,933 [16] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 19:10:54,947 [12] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 4 AND 6
+2014-10-17 19:11:01,566 [12] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 7 AND 9
+2014-10-17 19:12:33,746 [8] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 19:13:09,446 [16] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 19:13:12,865 [8] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 4 AND 6
+2014-10-17 19:13:30,477 [12] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 7 AND 9
+2014-10-17 19:14:11,240 [12] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 4 AND 6
+2014-10-17 19:16:09,639 [12] INFO  File User load
+2014-10-17 19:16:13,848 [16] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 19:16:22,658 [8] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 4 AND 6
+2014-10-17 19:21:38,477 [8] INFO  File User load
+2014-10-17 19:21:42,913 [12] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 19:21:56,121 [16] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 4 AND 6
+2014-10-17 19:22:03,521 [8] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 19:22:07,641 [12] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 7 AND 9
+2014-10-17 19:22:49,332 [10] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 3
+2014-10-17 23:01:06,267 [25] INFO  File User load
+2014-10-18 00:08:51,125 [44] INFO  File User load
+2014-10-18 00:22:55,821 [37] INFO  File User load
+2014-10-18 00:32:27,141 [44] INFO  File User load
+2014-10-18 00:52:51,422 [37] INFO  File User load
+2014-10-18 00:54:14,462 [35] INFO  File User load
+2014-10-18 00:57:34,963 [37] INFO  File User load
+2014-10-18 00:59:23,354 [41] INFO  File User load
+2014-10-18 01:02:53,896 [40] INFO  File User load
+2014-10-18 01:04:13,936 [34] INFO  File User load
+2014-10-18 01:19:48,944 [39] INFO  File User load
+2014-10-18 01:42:10,928 [35] INFO  File User load
+2014-10-18 01:44:56,196 [34] INFO  File User load
+2014-10-18 01:47:24,277 [42] INFO  File User load
+2014-10-18 07:46:18,148 [62] INFO  File User load
+2014-10-18 07:46:48,828 [63] INFO  File Start
+2014-10-18 07:47:51,092 [63] INFO  File Start
+2014-10-18 08:05:29,570 [32] INFO  File User load
+2014-10-18 08:05:51,260 [39] INFO  File Start
+2014-10-18 08:05:51,270 [39] INFO  File Start
+2014-10-18 23:10:18,723 [58] INFO  File User load
+2014-10-19 08:30:53,895 [38] INFO  File User load
+2014-10-19 08:31:01,923 [60] ERROR File Pageload error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FunctionGroup.Logic.PhongBanLogic.getAllPhongBan() in D:\QuangGui\Web_WS\DocMngr\DocMngr\Logic\PhongBanLogic.cs:line 17
+   at Function.QLPhongBan.Page_Load(Object sender, EventArgs e) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Function\QLPhongBan.aspx.cs:line 25
+2014-10-19 08:34:07,318 [60] INFO  File User load
+2014-10-19 08:34:25,096 [24] ERROR File getAll error: 
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   at FunctionGroup.Logic.RoleLogic.findById(String id) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Logic\RoleLogic.cs:line 36
+2014-10-19 08:44:08,220 [38] INFO  File User load
+2014-10-19 08:44:49,844 [38] INFO  File QLPhongBan: Validate before update U1 fail.
+2014-10-19 08:47:06,106 [25] INFO  File QLPhongBan: Validate before update U1 fail.
+2014-10-19 08:49:57,998 [33] INFO  File User load
+2014-10-19 08:50:47,413 [37] INFO  File QLPhongBan: Validate before update U1 fail.
+2014-10-19 08:52:01,104 [37] INFO  File QLPhongBan: Validate before update U1 fail.
+2014-10-19 08:53:39,037 [26] INFO  File QLPhongBan: Validate before update U1 fail.
+2014-10-19 08:54:34,179 [35] INFO  File User load
+2014-10-19 08:55:36,000 [35] INFO  File QLPhongBan: Validate before update U1 fail.
+2014-10-19 10:40:21,867 [40] INFO  File User load
+2014-10-19 10:42:27,920 [40] INFO  File User load
+2014-10-19 11:29:08,535 [33] INFO  File User load
+2014-10-19 12:04:49,271 [33] INFO  File User load
+2014-10-19 12:19:20,941 [31] INFO  File User load
+2014-10-20 03:48:41,337 [23] INFO  File User load
+2014-10-20 03:52:38,791 [23] INFO  File User load
+2014-10-20 06:23:51,265 [31] INFO  File User load
+2014-10-20 06:32:52,580 [36] INFO  File User load
+2014-10-20 06:37:37,855 [36] INFO  File User load
+2014-10-20 06:47:06,271 [5] INFO  File User load
+2014-10-20 06:48:26,335 [4] ERROR File editApprover_Click error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FunctionGroup.Bean.UserInfo.get_LoginName() in D:\QuangGui\Web_WS\DocMngr\DocMngr\Bean\UserInfo.cs:line 17
+   at FunctionGroup.Logic.ThemMoiUserLogic.validateInsert(UserInfo sec, String password1, String password2) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Logic\ThemMoiUserLogic.cs:line 46
+   at Function.ThemMoiUser.btAddApprover_Click(Object sender, EventArgs e) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Function\ThemMoiUser.aspx.cs:line 124
+2014-10-20 06:52:53,106 [10] INFO  File User load
+2014-10-20 06:54:19,456 [10] ERROR File editApprover_Click error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Data.Linq.SqlClient.QueryConverter.VisitInvocation(InvocationExpression invoke)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitExpression(Expression exp)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitWhere(Expression sequence, LambdaExpression predicate)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitAggregate(Expression sequence, LambdaExpression lambda, SqlNodeType aggType, Type returnType)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitSequenceOperatorCall(MethodCallExpression mc)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitMethodCall(MethodCallExpression mc)
+   at System.Data.Linq.SqlClient.QueryConverter.VisitInner(Expression node)
+   at System.Data.Linq.SqlClient.QueryConverter.ConvertOuter(Expression node)
+   at System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at FunctionGroup.Logic.ThemMoiUserLogic.validateInsert(UserInfo sec, String password1, String password2) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Logic\ThemMoiUserLogic.cs:line 50
+   at Function.ThemMoiUser.btAddApprover_Click(Object sender, EventArgs e) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Function\ThemMoiUser.aspx.cs:line 124
+2014-10-20 06:56:22,190 [4] INFO  File User load
+2014-10-20 07:02:13,920 [8] INFO  File User load
+2014-10-20 07:07:17,342 [8] ERROR File editApprover_Click error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FunctionGroup.Bean.UserInfo.get_LoginName() in D:\QuangGui\Web_WS\DocMngr\DocMngr\Bean\UserInfo.cs:line 17
+   at Function.ThemMoiUser.btAddApprover_Click(Object sender, EventArgs e) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Function\ThemMoiUser.aspx.cs:line 131
+2014-10-20 07:10:11,235 [4] INFO  File User load
+2014-10-20 07:10:33,397 [8] INFO  File User load
+2014-10-20 07:11:08,127 [11] INFO  File User load
+2014-10-20 07:12:46,974 [8] INFO  File User load
+2014-10-20 07:13:07,064 [8] INFO  File User load
+2014-10-20 07:14:43,676 [10] INFO  File User load
+2014-10-20 07:14:54,445 [10] ERROR File Pageload error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FunctionGroup.Logic.ThemMoiUserLogic.findUserById(String userId) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Logic\ThemMoiUserLogic.cs:line 33
+   at Function.ThemMoiUser.Page_Load(Object sender, EventArgs e) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Function\ThemMoiUser.aspx.cs:line 39
+2014-10-20 07:16:29,107 [5] ERROR File Pageload error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FunctionGroup.Logic.ThemMoiUserLogic.findUserById(String userId) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Logic\ThemMoiUserLogic.cs:line 33
+   at Function.ThemMoiUser.Page_Load(Object sender, EventArgs e) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Function\ThemMoiUser.aspx.cs:line 39
+2014-10-20 07:19:28,737 [8] INFO  File User load
+2014-10-21 03:48:19,217 [12] INFO  File User load
+2014-10-21 03:48:28,366 [10] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 03:50:15,296 [13] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 04:06:22,354 [19] INFO  File User load
+2014-10-21 04:06:27,420 [19] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 04:06:45,620 [19] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1   AND h.MaPhong  ='2') tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 04:07:02,774 [19] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 04:10:39,647 [13] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 04:35:02,087 [27] INFO  File User load
+2014-10-21 04:35:06,891 [8] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 04:39:17,138 [27] INFO  File User load
+2014-10-21 04:39:21,547 [27] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 04:48:02,515 [27] INFO  File User load
+2014-10-21 04:48:07,269 [27] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 04:48:18,823 [8] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1   AND h.MaPhong  ='1') tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 04:49:11,438 [27] INFO  File ddlHoSo_SelectedIndexChanged
+2014-10-21 04:50:08,843 [19] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-21 04:50:26,439 [8] INFO  File ddlHoSo_SelectedIndexChanged
+2014-10-21 04:50:48,831 [8] INFO  File ddlHoSo_SelectedIndexChanged
+2014-10-21 04:51:11,684 [15] INFO  File ddlHoSo_SelectedIndexChanged
+2014-10-21 04:55:54,323 [18] INFO  File User load
+2014-10-21 05:35:15,187 [17] INFO  File User load
+2014-10-21 05:38:32,030 [26] INFO  File User load
+2014-10-21 05:49:53,697 [27] INFO  File User load
+2014-10-22 00:52:09,308 [125] INFO  File User load
+2014-10-22 00:58:06,072 [19] INFO  File User load
+2014-10-22 02:25:36,756 [124] INFO  File User load
+2014-10-22 02:25:49,022 [17] ERROR File Pageload error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at FunctionGroup.Logic.PermitLogic.getPermitInfoOfUser(String userId) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Logic\PermitLogic.cs:line 38
+   at Function.PermitUser.Page_Load(Object sender, EventArgs e) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Function\PermitUser.aspx.cs:line 38
+2014-10-22 02:27:39,828 [19] INFO  File User load
+2014-10-22 03:31:02,912 [106] INFO  File User load
+2014-10-22 03:34:38,828 [109] INFO  File User load
+2014-10-22 03:39:30,069 [106] INFO  File User load
+2014-10-22 04:12:56,373 [111] INFO  File User load
+2014-10-22 04:13:33,286 [111] INFO  File ThemMoiUser.aspx.cs pass changed for user1
+2014-10-22 04:13:55,462 [111] INFO  File User load
+2014-10-22 04:14:00,572 [111] INFO  File User load
+2014-10-24 05:21:12,097 [110] INFO  File User load
+2014-10-24 05:21:26,571 [107] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 05:23:18,115 [110] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 05:23:38,372 [108] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 05:45:40,488 [116] INFO  File User load
+2014-10-24 05:45:46,266 [116] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 05:46:10,814 [114] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1   AND h.MaPhong  ='5') tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 05:46:14,400 [108] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1   AND h.MaPhong  ='3') tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 05:46:17,858 [108] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1   AND h.MaPhong  ='2') tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 05:46:21,207 [116] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1   AND h.MaPhong  ='1') tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 05:46:30,674 [116] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1   AND h.MaPhong  ='P01') tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 05:46:53,735 [114] INFO  File QLVanBanHoSo search HS by phong: 6; and Hop: 4
+2014-10-24 05:46:53,764 [114] INFO  File QLVanBanHoSo search HS result: 1
+2014-10-24 05:46:53,765 [114] INFO  File QLVanBanHoSo hoSo: 8
+2014-10-24 05:48:11,069 [114] INFO  File QLVanBanHoSo search HS by phong: 6; and Hop: 4
+2014-10-24 05:48:11,088 [114] INFO  File QLVanBanHoSo search HS result: 1
+2014-10-24 05:48:11,088 [114] INFO  File QLVanBanHoSo hoSo: 8
+2014-10-24 05:49:24,100 [114] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 05:50:26,823 [116] INFO  File QLVanBanHoSo search HS by phong: 6; and Hop: 4
+2014-10-24 05:50:26,830 [116] INFO  File QLVanBanHoSo search HS result: 1
+2014-10-24 05:50:26,830 [116] INFO  File QLVanBanHoSo hoSo: 8
+2014-10-24 06:39:25,156 [107] INFO  File User load
+2014-10-24 06:39:32,064 [114] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 06:41:13,577 [114] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 06:42:34,342 [107] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong,m.Name as MucLucName FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         inner join Su_MucLuc m on m.ID = h.MucLucSo  where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 06:48:44,475 [114] INFO  File User load
+2014-10-24 06:48:49,174 [114] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.id) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 06:52:00,816 [107] INFO  File User load
+2014-10-24 06:52:05,709 [107] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 06:52:22,793 [113] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1   AND h.MaPhong  ='P01') tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 06:52:37,965 [113] INFO  File QLVanBanHoSo search HS by phong: P01; and Hop: H2
+2014-10-24 06:52:37,997 [113] INFO  File QLVanBanHoSo search HS result: 2
+2014-10-24 06:52:37,998 [113] INFO  File QLVanBanHoSo hoSo: 9
+2014-10-24 06:55:31,699 [114] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 06:55:51,406 [107] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 06:56:03,820 [114] INFO  File QLVanBanHoSo search HS by phong: P01; and Hop: H2
+2014-10-24 06:56:03,831 [114] INFO  File QLVanBanHoSo search HS result: 2
+2014-10-24 06:56:03,831 [114] INFO  File QLVanBanHoSo hoSo: 9
+2014-10-24 07:01:00,892 [116] INFO  File User load
+2014-10-24 07:01:06,006 [107] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 07:01:10,470 [110] INFO  File QLVanBanHoSo search HS by phong: P01; and Hop: H2
+2014-10-24 07:01:10,486 [110] INFO  File QLVanBanHoSo search HS result: 2
+2014-10-24 07:01:10,487 [110] INFO  File QLVanBanHoSo hoSo: 9
+2014-10-24 07:01:17,002 [110] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 07:01:20,350 [114] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-24 07:01:20,363 [114] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-24 07:01:20,363 [114] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-24 07:03:12,638 [113] INFO  File User load
+2014-10-24 07:03:18,061 [107] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-24 07:03:21,822 [113] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-24 07:03:21,839 [113] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-24 07:03:21,840 [113] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-24 22:39:37,068 [116] INFO  File User load
+2014-10-24 22:40:00,091 [111] INFO  File QLVanBanHoSo search HS by phong: ; and Hop: 
+2014-10-24 22:40:00,126 [111] INFO  File QLVanBanHoSo search HS result: 1
+2014-10-24 22:40:06,413 [110] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 
+2014-10-24 22:40:06,432 [110] INFO  File QLVanBanHoSo search HS result: 8
+2014-10-24 22:40:11,356 [108] INFO  File ddlHoSo_SelectedIndexChanged
+2014-10-24 22:49:18,217 [110] INFO  File User load
+2014-10-24 22:49:42,143 [111] INFO  File QLVanBanHoSo search HS by phong: ; and Hop: 
+2014-10-24 22:49:42,175 [111] INFO  File QLVanBanHoSo search HS result: 1
+2014-10-24 22:50:28,743 [110] INFO  File QLVanBanHoSo search HS by phong: P01; and Hop: 
+2014-10-24 22:50:28,761 [110] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-24 22:50:32,373 [116] INFO  File ddlHoSo_SelectedIndexChanged
+2014-10-25 07:48:01,698 [108] INFO  File User load
+2014-10-25 07:48:07,332 [108] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 07:48:11,222 [108] INFO  File QLVanBanHoSo search HS by phong: P01; and Hop: H2
+2014-10-25 07:48:11,238 [108] INFO  File QLVanBanHoSo search HS result: 2
+2014-10-25 07:48:11,238 [108] INFO  File QLVanBanHoSo hoSo: 9
+2014-10-25 07:48:18,474 [107] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 07:48:44,218 [108] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 22:30:27,465 [108] INFO  File User load
+2014-10-25 22:30:35,546 [108] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 22:30:44,717 [111] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 22:30:44,732 [111] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 22:30:44,732 [111] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 22:30:57,080 [116] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 22:30:57,094 [116] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 22:30:57,094 [116] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 22:31:02,730 [116] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 22:31:07,784 [108] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 2
+2014-10-25 22:31:07,797 [108] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 22:31:07,797 [108] INFO  File QLVanBanHoSo hoSo: 4
+2014-10-25 22:35:20,207 [108] INFO  File User load
+2014-10-25 22:35:25,643 [111] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 22:35:32,680 [113] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 22:35:32,695 [113] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 22:35:32,696 [113] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 22:35:48,530 [111] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 22:35:48,541 [111] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 22:35:48,541 [111] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 22:35:50,797 [116] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 22:35:53,901 [116] INFO  File QLVanBanHoSo search HS by phong: P01; and Hop: H2
+2014-10-25 22:35:53,912 [116] INFO  File QLVanBanHoSo search HS result: 2
+2014-10-25 22:35:53,912 [116] INFO  File QLVanBanHoSo hoSo: 9
+2014-10-25 23:10:29,588 [115] INFO  File User load
+2014-10-25 23:10:35,154 [112] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:10:38,735 [112] INFO  File QLVanBanHoSo search HS by phong: P01; and Hop: 4
+2014-10-25 23:10:38,750 [112] INFO  File QLVanBanHoSo search HS result: 2
+2014-10-25 23:10:38,750 [112] INFO  File QLVanBanHoSo hoSo: 8
+2014-10-25 23:10:44,340 [112] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:11:07,684 [112] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:11:14,528 [115] INFO  File QLVanBanHoSo search HS by phong: P01; and Hop: H2
+2014-10-25 23:11:14,550 [115] INFO  File QLVanBanHoSo search HS result: 2
+2014-10-25 23:11:14,550 [115] INFO  File QLVanBanHoSo hoSo: 9
+2014-10-25 23:11:17,620 [112] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:11:21,315 [107] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 23:11:21,326 [107] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 23:11:21,326 [107] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 23:11:24,389 [115] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:11:36,520 [115] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:13:13,100 [114] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:16:08,240 [107] INFO  File User load
+2014-10-25 23:16:13,138 [114] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:16:21,852 [107] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 23:16:21,869 [107] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 23:16:21,869 [107] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 23:16:25,794 [112] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:16:57,175 [112] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:25:26,545 [107] INFO  File User load
+2014-10-25 23:25:32,396 [107] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:25:39,056 [115] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 23:25:39,076 [115] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 23:25:39,077 [115] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 23:29:45,935 [112] INFO  File User load
+2014-10-25 23:29:50,706 [112] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:30:04,081 [112] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 23:30:04,096 [112] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 23:30:04,097 [112] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 23:31:30,781 [112] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:31:33,601 [115] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 23:31:33,612 [115] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 23:31:33,612 [115] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 23:33:10,309 [112] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:33:13,794 [112] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 23:33:13,808 [112] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 23:33:13,808 [112] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 23:51:35,302 [110] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:51:41,008 [114] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 23:51:41,022 [114] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 23:51:41,022 [114] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 23:53:08,059 [110] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:53:13,892 [109] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 23:53:13,904 [109] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 23:53:13,904 [109] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-25 23:57:52,785 [114] INFO  File User load
+2014-10-25 23:57:58,318 [109] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-25 23:58:02,681 [109] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-25 23:58:02,695 [109] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-25 23:58:02,696 [109] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-26 00:13:00,361 [112] INFO  File User load
+2014-10-26 00:13:04,930 [115] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-26 00:13:09,370 [113] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-26 00:13:09,386 [113] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-26 00:13:09,386 [113] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-26 00:13:36,217 [113] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-26 00:42:15,890 [110] INFO  File User load
+2014-10-26 00:42:20,646 [113] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-26 00:42:24,339 [113] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-26 00:42:24,354 [113] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-26 00:42:24,355 [113] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-26 00:42:24,837 [113] ERROR File PageLoad error: 
+System.NotSupportedException: Method 'Int32 extractNumber(System.String)' has no supported translation to SQL.
+   at System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitMethodCall(SqlMethodCall mc)
+   at System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   at System.Data.Linq.SqlClient.SqlVisitor.VisitExpression(SqlExpression exp)
+   at System.Data.Linq.SqlClient.SqlVisitor.VisitSelectCore(SqlSelect select)
+   at System.Data.Linq.SqlClient.PostBindDotNetConverter.Visitor.VisitSelect(SqlSelect select)
+   at System.Data.Linq.SqlClient.SqlVisitor.Visit(SqlNode node)
+   at System.Data.Linq.SqlClient.SqlProvider.BuildQuery(ResultShape resultShape, Type resultType, SqlNode node, ReadOnlyCollection`1 parentParameters, SqlNodeAnnotations annotations)
+   at System.Data.Linq.SqlClient.SqlProvider.BuildQuery(Expression query, SqlNodeAnnotations annotations)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at FunctionGroup.Logic.VanBanHoSoLogic.getVanBanOfHoSo(String hoSoId, Int32 page, Int32& row_count) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Logic\VanBanHoSoLogic.cs:line 87
+   at FunctionGroup.Function.QLVanBanHoSo.loadDataToGridView(String soHS) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Function\QLVanBanHoSo.aspx.cs:line 153
+   at FunctionGroup.Function.QLVanBanHoSo.Page_Load(Object sender, EventArgs e) in D:\QuangGui\Web_WS\DocMngr\DocMngr\Function\QLVanBanHoSo.aspx.cs:line 82
+2014-10-26 01:55:14,892 [115] INFO  File User load
+2014-10-26 01:55:22,040 [110] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-26 01:55:25,507 [110] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-26 01:55:25,522 [110] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-26 01:55:25,523 [110] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-26 01:55:52,443 [110] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-26 01:56:07,109 [113] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1   AND h.MaPhong  ='1') tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-26 02:12:16,576 [109] INFO  File User load
+2014-10-27 07:27:27,665 [118] INFO  File User load
+2014-10-27 07:27:36,604 [116] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-27 07:37:58,760 [118] INFO  File User load
+2014-10-27 07:38:03,692 [116] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-27 20:18:21,952 [118] INFO  File User load
+2014-10-27 20:18:28,806 [118] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-27 20:19:18,754 [118] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-27 20:21:21,490 [105] INFO  File User load
+2014-10-27 20:21:39,017 [118] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-27 20:21:58,000 [105] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-27 20:23:18,021 [119] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-27 20:23:22,116 [106] INFO  File QLVanBanHoSo search HS by phong: P01; and Hop: H2
+2014-10-27 20:23:22,131 [106] INFO  File QLVanBanHoSo search HS result: 2
+2014-10-27 20:23:22,132 [106] INFO  File QLVanBanHoSo hoSo: 9
+2014-10-27 22:12:03,711 [19] INFO  File User load
+2014-10-27 22:12:10,205 [19] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-27 22:12:14,846 [19] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-27 22:12:14,862 [19] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-27 22:12:14,863 [19] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-27 22:41:11,840 [105] INFO  File User load
+2014-10-27 22:47:19,859 [111] INFO  File User load
+2014-10-27 22:51:27,492 [116] INFO  File User load
+2014-10-27 22:54:41,116 [118] INFO  File User load
+2014-10-27 22:54:48,259 [116] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-27 22:58:29,812 [106] INFO  File User load
+2014-10-28 07:31:14,428 [6] INFO  File User load
+2014-10-29 04:08:22,376 [14] INFO  File User load
+2014-10-29 04:08:29,900 [9] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-29 04:10:40,051 [9] INFO  File User load
+2014-10-29 04:10:45,128 [4] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-29 04:10:51,662 [13] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-29 04:10:51,737 [13] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-29 04:10:51,737 [13] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-29 04:18:09,415 [19] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-29 04:21:53,449 [21] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-29 04:24:30,488 [19] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-29 04:44:02,137 [4] INFO  File User load
+2014-10-29 04:44:39,738 [5] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-29 04:44:48,439 [11] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-29 04:44:48,454 [11] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-29 04:44:48,455 [11] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-29 04:55:17,560 [13] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-29 04:55:31,838 [14] INFO  File QLVanBanHoSo search HS by phong: 1; and Hop: 1
+2014-10-29 04:55:31,850 [14] INFO  File QLVanBanHoSo search HS result: 3
+2014-10-29 04:55:31,850 [14] INFO  File QLVanBanHoSo hoSo: 1
+2014-10-29 05:05:01,087 [10] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-29 05:13:25,820 [11] INFO  File User load
+2014-10-29 05:13:36,210 [4] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1   AND h.MaPhong  ='1') tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-29 05:13:43,288 [11] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-10-29 05:14:40,170 [4] INFO  File User load
+2014-10-29 05:14:45,614 [19] INFO  File HoSoLogic search query: SELECT * FROM (SELECT row_number() over(order by h.HoSoSoNumber) row_num, count(h.id) over (partition by null) row_count, h.*,p.TenPhong FROM Su_HoSo h inner join Su_PhongLuuTru p on p.MaPhong = h.MaPhong 
+                         where 1 =1  ) tmp WHERE row_num BETWEEN 1 AND 20
+2014-11-05 20:55:14,295 [92] INFO  File User load
+2014-11-05 20:56:39,448 [91] INFO  File Validate before insert  fail.
+2014-11-05 21:01:25,756 [92] INFO  File User load
+2014-11-05 21:03:00,805 [93] INFO  File Validate before insert  fail.
+2014-11-05 21:05:19,160 [92] INFO  File User load
+2014-11-05 21:06:19,738 [92] INFO  File Validate before insert  fail.
+2014-11-05 21:18:45,110 [110] INFO  File User load
+2014-11-05 21:19:39,202 [110] INFO  File Validate before insert  fail.
